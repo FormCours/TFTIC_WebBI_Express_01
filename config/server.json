@@ -1,0 +1,10 @@
+{
+    "developement" : {
+        "mode": "dev",
+        "port" : 8000
+    },
+    "production" : {
+        "mode": "prod",
+        "port" : 5555
+    }
+}

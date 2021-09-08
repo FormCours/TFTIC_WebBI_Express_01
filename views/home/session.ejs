@@ -1,0 +1,21 @@
+<%- include('./../_partials/head.ejs'); -%>
+
+<h1>Utilisation de la session</h1>
+<% if (session.user) { %>
+
+    <h3>Bienvenue <%= session.user.pseudo %></h3>
+    <a href="/session/destroy">Detruire la session</a>
+
+<% } else { %>
+
+    <h3>Bienvenue inconnue</h3>
+
+<% } %>
+
+<h2>Création</h2>
+<form action="/session/create" method="post">
+    <input type="text" name="pseudo">
+    <button type="submit">Créer la session</button>
+</form>
+
+<%- include('./../_partials/footer.ejs'); -%>

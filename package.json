@@ -1,0 +1,37 @@
+{
+  "name": "demo_express_01_intro",
+  "version": "1.0.0",
+  "description": "Demo Express JS - Web Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --experimental-json-modules server.js",
+    "prod": "node --experimental-json-modules server.js --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormCours/TFTIC_WebBI_Express_01.git"
+  },
+  "keywords": [
+    "TFTIC",
+    "ExpressJS",
+    "NodeJS"
+  ],
+  "author": "Aurélien",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/FormCours/TFTIC_WebBI_Express_01/issues"
+  },
+  "homepage": "https://github.com/FormCours/TFTIC_WebBI_Express_01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2"
+  }
+}
